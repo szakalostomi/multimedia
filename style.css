@@ -1,0 +1,68 @@
+html{
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 400px;
+}
+
+.grid img {
+    margin: 2px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.grid img.flip {
+    transform: rotateY(180deg);
+}
+
+.popup {
+    width: 200px;
+    height: 200px;
+    z-index:20;
+    position: absolute;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-size: 35px;
+}
+
+.data span {
+    color: yellow;
+    font-size: 35px;
+}
+
+table{
+    margin: auto;
+}
+
+#list {
+    border: 1px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.top_list {
+    border: 5px solid;
+    margin-top: -95px;
+    width: 300px;
+    height: 400px;
+    margin-left: 800px;
+}
+
+.delete{
+    margin-left: 125px;
+}

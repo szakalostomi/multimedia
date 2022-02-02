@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Szakálos Tamás Multimédia kötelező program 2020/2021 II. félév</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/gif" href="images/icon.png" />
+    <script src="script.js" defer></script>
+    <script src="jquery-3.2.0.min.js"></script>
+</head>
+<body>
+    <audio id="myAudio" autoplay="autoplay" loop>
+        <source src="sound/game_sound.mp3" />
+    </audio>
+
+    <audio id="sound">
+        <source src="sound/point_sound.mp3" />
+    </audio>
+
+    <audio id="win">
+        <source src="sound/win_sound.mp3" />
+    </audio>
+
+    <div class="container">
+        <div class="data">
+            <div class="score">Score : <span class="scoreBoard">0</span></div>
+            <div class="timer">Time : <span class="timerBoard">00:00:00</span></div>
+        </div>
+        <div class="grid">
+            <div class="popup">
+                <button class="playAgain" onClick="window.location.reload()">Play Again</button>
+            </div>
+        </div>
+        <div class="top_list">
+            <h3 style="text-align: center; padding-bottom: 5px">TOPLIST</h3>
+            <button class="delete" onClick="localStorage.clear();">Delete</button>
+            <p id="list"></p>
+        </div>
+    </div>
+</body>
+</html>
